@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+
+RewriteEngine on
+# We want a URL like : /controller/action/var1/var2/...
+RewriteRule ^([a-zA-Z0-9\-\_\/]+)$ /2nd_year/f1news-website/index.php?p=$1 [L]

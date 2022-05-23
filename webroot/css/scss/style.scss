@@ -1,0 +1,23 @@
+$enable-negative-margins: true;
+
+$primary: #e10100;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  max-width: 100%;
+}
+
+.bd {
+  border: 1px solid black;
+}
+
+.bgcolor-grey {
+  background-color: rgb(140, 153, 173);
+}
+
+.panel-aside-navbar {
+  width: 240px;
+}
