@@ -38,7 +38,7 @@ class newsController extends controller
                 if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
 
                     // Recaptcha verification
-                    $secret = '6Lc5RNoaAAAAAK8yF-M8OP4RWOmzgmAoFqYqmwpL';
+                    $secret = 'KEYHERE';
                     $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret . '&response=' . $_POST['g-recaptcha-response']);
                     $responseData = json_decode($verifyResponse);
 
